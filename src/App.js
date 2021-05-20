@@ -1,35 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import {useEffect, useState} from "react";
+import {useStore} from "./hooks/hooks";
+import {observer} from "mobx-react-lite";
 
-function App() {
-    const [state, setState] = useState({});
-    useEffect(() => {
-        fetch("https://swapi.dev/api/people/1/")
-            .then(response => response.json()) // Parsing
-            .then(data => setState(data)); // collecting
-    });
-
+const  App = observer(() => {
+    const fileStore = useStore("fileStore")
 
     return (
         <div className="App">
-            {state.name}
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+            <h1>File Store App</h1>
+            <button onClick={() => fileStore.decrement()}>D</button>
+
+            <button onClick={() => fileStore.increment()}>I</button>
+            <h2>Value {fileStore.value}</h2>
         </div>
     );
-}
+})
 
 export default App;
