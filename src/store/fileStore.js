@@ -1,14 +1,12 @@
 import {makeAutoObservable} from 'mobx';
 
 export class FileStore {
-
-    value= 0;
+    value = 0;
+    files = []
 
     constructor() {
         makeAutoObservable(this)
-        // fetch("https://swapi.dev/api/people/1/")
-        //     .then(response => response.json()) // Parsing
-        //     .then(data => console.log(data)); // collecting
+        window.api.response("toFileService", (data) => this.addFile(data));
     }
 
     increment() {
@@ -19,8 +17,11 @@ export class FileStore {
         this.value -= 1;
     }
 
-}
+    addFile(fileName) {
+        this.files.push(fileName)
+    }
 
+}
 
 
 export default FileStore;

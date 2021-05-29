@@ -12,6 +12,9 @@ const  App = observer(() => {
 
             <button onClick={() => fileStore.increment()}>I</button>
             <h2>Value {fileStore.value}</h2>
+            {
+                fileStore.files.map((file) => <div>{file.split('\\').slice(-1)[0]}</div>)
+            }
         </div>
     );
 })

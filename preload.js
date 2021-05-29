@@ -1,8 +1,8 @@
-const fs = require('fs')
+const {contextBridge, ipcRenderer} = require("electron");
 
-const stats = fs.readdirSync('C:\\Program Files (x86)\\Steam\\steamapps\\common\\FPSAimTrainer\\FPSAimTrainer\\stats')
-
-
-window.addEventListener('DOMContentLoaded', () => {
-    console.log(stats)
-})
+contextBridge.exposeInMainWorld(
+    "api", {
+        request: (channel, data) => ipcRenderer.send(channel, data),
+        response: (channel, func) => ipcRenderer.on(channel, (event, ...args) => func(...args))
+    }
+);
