@@ -1,7 +1,6 @@
 import {makeAutoObservable} from 'mobx';
 
 export class FileStore {
-    value = 0;
     files = []
 
     constructor() {
@@ -9,16 +8,15 @@ export class FileStore {
         window.api.response("toFileService", (data) => this.addFile(data));
     }
 
-    increment() {
-        this.value += 1;
-    }
+    addFile(file) {
+        if(file.event === 'add'){
+            this.files.push(file)
+        }
 
-    decrement() {
-        this.value -= 1;
-    }
-
-    addFile(fileName) {
-        this.files.push(fileName)
+        if(file.event === 'unlink') {
+            const pos = this.files.map((f => f.date)).indexOf(file.date);
+            this.files.splice(pos, 1);
+        }
     }
 
 }
