@@ -56,7 +56,6 @@ function createWindow() {
         chokidar.watch(statsPath, chokidarOptions).on('unlink', (path) => {
                 win.webContents.send('toFileService', {event: 'unlink'})
         });
-
     })
 }
 
