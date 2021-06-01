@@ -1,26 +1,21 @@
 import './App.css';
-import {useStore} from "./hooks/hooks";
-import {observer} from "mobx-react-lite";
+import React from 'react';
+import {HashRouter,Link,Route,Switch} from "react-router-dom";
+import Home from './views/index';
 
-const App = observer(() => {
-    const fileStore = useStore("fileStore")
-
+const App = () => {
     return (
-        <div className="App">
-            {
-                fileStore.files.map((file) => (
-                    <div>
-                        <h1>Scenario: {file.data.Scenario}</h1>
-                        <div>date: {file.date.toString()}</div>
-                        <div>Score: {file.data.Score}</div>
-                        <div>Shots: {file.data.Shots}</div>
-                        <div>Hits: {file.data.Hits}</div>
-                        <div>Damage Possible: {file.data['Damage Possible']}</div>
-                        <br/>
-                    </div>
-                ))}
-        </div>
+        <HashRouter>
+            <div className="App">
+                <div className="menu">
+                    <Link to="/"><h2>Home</h2></Link>
+                </div>
+                <Switch>
+                    <Route exact path="/" component={Home}/>
+                </Switch>     
+            </div>
+        </HashRouter> 
     );
-});
+};
 
 export default App;
