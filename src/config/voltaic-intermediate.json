@@ -1,0 +1,167 @@
+{
+  "playlistName": "Voltaic Intermediate",
+  "scenarioList": [
+    {
+      "scenarioName": "Pasu Voltaic Easy",
+      "reqs": {
+        "silver": 57,
+        "gold": 64,
+        "platinum": 75,
+        "diamond": 85
+      }
+    },
+    {
+      "scenarioName": "B180 Voltaic Easy",
+      "reqs": {
+        "silver": 56,
+        "gold": 65,
+        "platinum": 72,
+        "diamond": 82
+      }
+    },
+    {
+      "scenarioName": "Popcorn Voltaic Easy",
+      "reqs": {
+        "silver": 150,
+        "gold": 200,
+        "platinum": 250,
+        "diamond": 310
+      }
+    },
+    {
+      "scenarioName": "ww3t Voltaic",
+      "reqs": {
+        "silver": 95,
+        "gold": 105,
+        "platinum": 115,
+        "diamond": 125
+      }
+    },
+    {
+      "scenarioName": "1w4ts Voltaic",
+      "reqs": {
+        "silver": 82,
+        "gold": 91,
+        "platinum": 100,
+        "diamond": 110
+      }
+    },
+    {
+      "scenarioName": "6 Sphere Hipfire Voltaic",
+      "reqs": {
+        "silver": 108,
+        "gold": 120,
+        "platinum": 132,
+        "diamond": 142
+      }
+    },
+    {
+      "scenarioName": "Smoothbot Voltaic Easy",
+      "reqs": {
+        "silver": 2100,
+        "gold": 2400,
+        "platinum": 2800,
+        "diamond": 3100
+      }
+    },
+    {
+      "scenarioName": "Air Angelic 4 Voltaic Easy",
+      "reqs": {
+        "silver": 2200,
+        "gold": 2600,
+        "platinum": 3000,
+        "diamond": 3300
+      }
+    },
+    {
+      "scenarioName": "PGTI Voltaic Easy",
+      "reqs": {
+        "silver": 1000,
+        "gold": 1300,
+        "platinum": 1600,
+        "diamond": 1900
+      }
+    },
+    {
+      "scenarioName": "FuglaaXYZ Voltaic Easy",
+      "reqs": {
+        "silver": 8500,
+        "gold": 10000,
+        "platinum": 12000,
+        "diamond": 14000
+      }
+    },
+    {
+      "scenarioName": "Ground Plaza Voltaic Easy",
+      "reqs": {
+        "silver": 845,
+        "gold": 855,
+        "platinum": 870,
+        "diamond": 880
+      }
+    },
+    {
+      "scenarioName": "Air Voltaic Easy",
+      "reqs": {
+        "silver": 800,
+        "gold": 825,
+        "platinum": 850,
+        "diamond": 863
+      }
+    },
+    {
+      "scenarioName": "patTS Voltaic Easys",
+      "reqs": {
+        "silver": 69,
+        "gold": 75,
+        "platinum": 81,
+        "diamond": 88
+      }
+    },
+    {
+      "scenarioName": "psalmTS Voltaic Easy",
+      "reqs": {
+        "silver": 58,
+        "gold": 67,
+        "platinum": 76,
+        "diamond": 85
+      }
+    },
+    {
+      "scenarioName": "voxTS Voltaic Easy",
+      "reqs": {
+        "silver": 78,
+        "gold": 86,
+        "platinum": 96,
+        "diamond": 105
+      }
+    },
+    {
+      "scenarioName": "kinTS Voltaic Easy",
+      "reqs": {
+        "silver": 54,
+        "gold": 60,
+        "platinum": 66,
+        "diamond": 72
+      }
+    },
+    {
+      "scenarioName": "B180T Voltaic Easy",
+      "reqs": {
+        "silver": 46,
+        "gold": 55,
+        "platinum": 64,
+        "diamond": 72
+      }
+    },
+    {
+      "scenarioName": "Smoothbot TS Voltaic Easy ",
+      "reqs": {
+        "silver": 42,
+        "gold": 46,
+        "platinum": 50,
+        "diamond": 54
+      }
+    }
+  ]
+}
