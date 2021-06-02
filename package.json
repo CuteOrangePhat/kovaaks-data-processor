@@ -2,13 +2,14 @@
   "name": "kovaaks-electron",
   "version": "1.0.0",
   "description": "parse kovaaks data and display neatly",
-  "main": "main.js",
+  "main": "src/electron/main.js",
   "scripts": {
     "start": "concurrently -k \"set BROWSER=none && npm run react\" \"npm:electron\"",
-    "electron": "wait-on tcp:3000 && electron .",
+    "electron": "wait-on tcp:3000 && electron ./src/electron/main.js",
     "react": "react-scripts start",
     "build:react": "react-scripts build",
-    "test:react": "react-scripts test"
+    "test:react": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "author": "Madison",
   "license": "ISC",
