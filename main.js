@@ -12,7 +12,7 @@ TODO: Can't read from program files because of a glob issue :( need to fix
 */
 const statsPath = isDev ?
     './src/mockData/*.csv'
-    : "C:/Program Files (x86)/Steam/steamapps/common/FPSAimTrainer/FPSAimTrainer/stats/**/*.csv";
+    : "C:/Program Files (x86)/Steam/steamapps/common/FPSAimTrainer/FPSAimTrainer/stats/";
 
 
 const chokidarOptions = {
