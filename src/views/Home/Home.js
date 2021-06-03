@@ -1,11 +1,12 @@
-import {useStore} from "../hooks/hooks";
+import './Home.css';
+import {useStore} from "../../hooks/hooks";
 import {observer} from "mobx-react-lite";
 
 const Home = observer(() => {
     const fileStore = useStore("fileStore");
 
     return (
-        <div className="Home">
+        <div className="home">
             {
                 fileStore.files.map((file) => (
                     <div>
