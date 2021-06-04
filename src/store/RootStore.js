@@ -1,8 +1,8 @@
 import React from "react";
-import { FileStore } from "./fileStore";
+import { ScenarioStore } from "./ScenarioStore";
 
 export const stores = Object.freeze({
-    fileStore: new FileStore()
+    scenarioStore: new ScenarioStore()
 });
 
 export const storesContext = React.createContext(stores);

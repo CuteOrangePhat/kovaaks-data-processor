@@ -14,10 +14,10 @@
 .idea/**/shelf
 .idea
 
-# Generated files
+# Generated scenarios
 .idea/**/contentModel.xml
 
-# Sensitive or high-churn files
+# Sensitive or high-churn scenarios
 .idea/**/dataSources/
 .idea/**/dataSources.ids
 .idea/**/dataSources.local.xml
@@ -31,7 +31,7 @@
 .idea/**/libraries
 
 # Gradle and Maven with auto-import
-# When using Gradle or Maven with auto-import, you should exclude module files,
+# When using Gradle or Maven with auto-import, you should exclude module scenarios,
 # since they will be recreated, and may cause churn.  Uncomment if using
 # auto-import.
 # .idea/artifacts
@@ -131,7 +131,7 @@ sketch
 *.code-workspace
 
 ### VisualStudioCode Patch ###
-# Ignore all local history of files
+# Ignore all local history of scenarios
 .history
 .ionide
 
@@ -141,17 +141,17 @@ sketch
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-# User-specific files
+# User-specific scenarios
 *.rsuser
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
 
-# User-specific files (MonoDevelop/Xamarin Studio)
+# User-specific scenarios (MonoDevelop/Xamarin Studio)
 *.userprefs
 
-# Mono auto generated files
+# Mono auto generated scenarios
 mono_crash.*
 
 # Build results
@@ -172,10 +172,10 @@ bld/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
-# Uncomment if you have tasks that create the project's static files in wwwroot
+# Uncomment if you have tasks that create the project's static scenarios in wwwroot
 #wwwroot/
 
-# Visual Studio 2017 auto generated files
+# Visual Studio 2017 auto generated scenarios
 Generated\ Files/
 
 # MSTest test Results
@@ -234,10 +234,10 @@ StyleCopReport.xml
 *.svclog
 *.scc
 
-# Chutzpah Test files
+# Chutzpah Test scenarios
 _Chutzpah*
 
-# Visual C++ cache files
+# Visual C++ cache scenarios
 ipch/
 *.aps
 *.ncb
@@ -337,7 +337,7 @@ PublishScripts/
 !**/[Pp]ackages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/[Pp]ackages/repositories.config
-# NuGet v3's project.json files produces more ignorable files
+# NuGet v3's project.json scenarios produces more ignorable scenarios
 *.nuget.props
 *.nuget.targets
 
@@ -349,7 +349,7 @@ csx/
 ecf/
 rcf/
 
-# Windows Store app package directories and files
+# Windows Store app package directories and scenarios
 AppPackages/
 BundleArtifacts/
 Package.StoreAssociation.xml
@@ -358,8 +358,8 @@ _pkginfo.txt
 *.appxbundle
 *.appxupload
 
-# Visual Studio cache files
-# files ending in .cache can be ignored
+# Visual Studio cache scenarios
+# scenarios ending in .cache can be ignored
 *.[Cc]ache
 # but keep track of directories ending in .cache
 !?*.[Cc]ache/
@@ -375,7 +375,7 @@ ClientBin/
 *.publishsettings
 orleans.codegen.cs
 
-# Including strong name files can present a security risk
+# Including strong name scenarios can present a security risk
 # (https://github.com/github/gitignore/pull/2483#issue-259490424)
 #*.snk
 
@@ -386,8 +386,8 @@ orleans.codegen.cs
 # RIA/Silverlight projects
 Generated_Code/
 
-# Backup & report files from converting an old project file
-# to a newer Visual Studio version. Backup files are not needed,
+# Backup & report scenarios from converting an old project file
+# to a newer Visual Studio version. Backup scenarios are not needed,
 # because we have git ;-)
 _UpgradeReport_Files/
 Backup*/
@@ -396,7 +396,7 @@ UpgradeLog*.htm
 ServiceFabricBackup/
 *.rptproj.bak
 
-# SQL Server files
+# SQL Server scenarios
 *.mdf
 *.ldf
 *.ndf
@@ -426,7 +426,7 @@ node_modules/
 # Visual Studio 6 workspace options file
 *.opt
 
-# Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+# Visual Studio 6 auto-generated workspace file (contains which scenarios were open etc.)
 *.vbw
 
 # Visual Studio LightSwitch build output
@@ -498,7 +498,7 @@ MigrationBackup/
 FodyWeavers.xsd
 
 ### VisualStudio Patch ###
-# Additional files built by Visual Studio
+# Additional scenarios built by Visual Studio
 *.tlog
 
 # End of https://www.toptal.com/developers/gitignore/api/react,intellij,visualstudiocode,visualstudio

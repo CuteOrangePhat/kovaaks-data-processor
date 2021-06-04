@@ -2,7 +2,7 @@
   "playlistName": "Voltaic Intermediate",
   "scenarioList": [
     {
-      "scenarioName": "Pasu Voltaic Easy",
+      "name": "Pasu Voltaic Easy",
       "reqs": {
         "silver": 57,
         "gold": 64,
@@ -11,7 +11,7 @@
       }
     },
     {
-      "scenarioName": "B180 Voltaic Easy",
+      "name": "B180 Voltaic Easy",
       "reqs": {
         "silver": 56,
         "gold": 65,
@@ -20,7 +20,7 @@
       }
     },
     {
-      "scenarioName": "Popcorn Voltaic Easy",
+      "name": "Popcorn Voltaic Easy",
       "reqs": {
         "silver": 150,
         "gold": 200,
@@ -29,7 +29,7 @@
       }
     },
     {
-      "scenarioName": "ww3t Voltaic",
+      "name": "ww3t Voltaic",
       "reqs": {
         "silver": 95,
         "gold": 105,
@@ -38,7 +38,7 @@
       }
     },
     {
-      "scenarioName": "1w4ts Voltaic",
+      "name": "1w4ts Voltaic",
       "reqs": {
         "silver": 82,
         "gold": 91,
@@ -47,7 +47,7 @@
       }
     },
     {
-      "scenarioName": "6 Sphere Hipfire Voltaic",
+      "name": "6 Sphere Hipfire Voltaic",
       "reqs": {
         "silver": 108,
         "gold": 120,
@@ -56,7 +56,7 @@
       }
     },
     {
-      "scenarioName": "Smoothbot Voltaic Easy",
+      "name": "Smoothbot Voltaic Easy",
       "reqs": {
         "silver": 2100,
         "gold": 2400,
@@ -65,7 +65,7 @@
       }
     },
     {
-      "scenarioName": "Air Angelic 4 Voltaic Easy",
+      "name": "Air Angelic 4 Voltaic Easy",
       "reqs": {
         "silver": 2200,
         "gold": 2600,
@@ -74,7 +74,7 @@
       }
     },
     {
-      "scenarioName": "PGTI Voltaic Easy",
+      "name": "PGTI Voltaic Easy",
       "reqs": {
         "silver": 1000,
         "gold": 1300,
@@ -83,7 +83,7 @@
       }
     },
     {
-      "scenarioName": "FuglaaXYZ Voltaic Easy",
+      "name": "FuglaaXYZ Voltaic Easy",
       "reqs": {
         "silver": 8500,
         "gold": 10000,
@@ -92,7 +92,7 @@
       }
     },
     {
-      "scenarioName": "Ground Plaza Voltaic Easy",
+      "name": "Ground Plaza Voltaic Easy",
       "reqs": {
         "silver": 845,
         "gold": 855,
@@ -101,7 +101,7 @@
       }
     },
     {
-      "scenarioName": "Air Voltaic Easy",
+      "name": "Air Voltaic Easy",
       "reqs": {
         "silver": 800,
         "gold": 825,
@@ -110,7 +110,7 @@
       }
     },
     {
-      "scenarioName": "patTS Voltaic Easys",
+      "name": "patTS Voltaic Easys",
       "reqs": {
         "silver": 69,
         "gold": 75,
@@ -119,7 +119,7 @@
       }
     },
     {
-      "scenarioName": "psalmTS Voltaic Easy",
+      "name": "psalmTS Voltaic Easy",
       "reqs": {
         "silver": 58,
         "gold": 67,
@@ -128,7 +128,7 @@
       }
     },
     {
-      "scenarioName": "voxTS Voltaic Easy",
+      "name": "voxTS Voltaic Easy",
       "reqs": {
         "silver": 78,
         "gold": 86,
@@ -137,7 +137,7 @@
       }
     },
     {
-      "scenarioName": "kinTS Voltaic Easy",
+      "name": "kinTS Voltaic Easy",
       "reqs": {
         "silver": 54,
         "gold": 60,
@@ -146,7 +146,7 @@
       }
     },
     {
-      "scenarioName": "B180T Voltaic Easy",
+      "name": "B180T Voltaic Easy",
       "reqs": {
         "silver": 46,
         "gold": 55,
@@ -155,7 +155,7 @@
       }
     },
     {
-      "scenarioName": "Smoothbot TS Voltaic Easy ",
+      "name": "Smoothbot TS Voltaic Easy ",
       "reqs": {
         "silver": 42,
         "gold": 46,
