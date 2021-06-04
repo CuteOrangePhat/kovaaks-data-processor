@@ -7,7 +7,7 @@ const fs = require('fs')
 const isDev = true;
 
 /*
-TODO: Can't read from program files because of a glob issue :( need to fix
+TODO: Can't read from program scenarios because of a glob issue :( need to fix
     https://github.com/paulmillr/chokidar/issues/300
 */
 const statsPath = isDev ?
@@ -43,18 +43,17 @@ function createWindow() {
                 const data = fs.readFileSync(path, 'utf8')
                 const {birthtime} = fs.statSync(path)
                 const jsonResult = {
-                    date: birthtime,
                     event: 'add',
-                    data: csvToJson(data)
+                    data: {...csvToJson(data), ...{date: birthtime}}
                 };
-                win.webContents.send('toFileService', jsonResult)
+                win.webContents.send('addScenario', jsonResult)
             } catch (err) {
                 console.error(err)
             }
         });
 
         chokidar.watch(statsPath, chokidarOptions).on('unlink', (path) => {
-                win.webContents.send('toFileService', {event: 'unlink'})
+                win.webContents.send('removeScenario', {event: 'unlink'})
         });
     })
 }

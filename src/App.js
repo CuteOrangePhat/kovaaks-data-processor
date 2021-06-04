@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
 import {HashRouter,Route,Switch} from "react-router-dom";
-import Home from './views/Home/Home';
-import Navigation from "./views/Navigation/Navigation";
+import Voltaic from './views/Voltaic/Voltaic';
+import Navigation from "./components/Navigation/Navigation";
 import "../node_modules/material-design-icons/iconfont/material-icons.css";
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
             <div className="App">
                 <Navigation />
                 <Switch>
-                    <Route exact path="/" component={Home}/>
+                    <Route exact path="/" component={Voltaic}/>
                 </Switch>     
             </div>
         </HashRouter> 

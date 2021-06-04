@@ -1,7 +1,7 @@
 function csvToJson(csv) {
     const lines = csv.split("\n");
     let headers, values;
-    let result = {Score: '', Scenario: ''}
+    let result = {Score: '', Scenario: '', Hash: ''}
 
     for (let i = 1; i < lines.length; i++) {
         if (lines[i].includes('Weapon,Shots,Hits')) {
