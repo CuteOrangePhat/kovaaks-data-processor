@@ -19,7 +19,7 @@ const ProgressBar = observer((props) => {
                 <div
                     style={{width: percentToLevel + "%"}}
                     className="percentage-bar"/>
-                <div className="percentage-text">{props.scenario+ " " + highScore}</div>
+                <div className="percentage-text">{props.scenario + " " + highScore}</div>
             </div>
             <div>{nextRank + " - " + nextRankReq}</div>
         </div>
