@@ -6,7 +6,7 @@
   "scripts": {
     "start": "concurrently -k \"set BROWSER=none && npm run react\" \"npm:electron\"",
     "electron": "wait-on tcp:3000 && electron ./src/electron/main.js",
-    "react": "react-scripts start",
+    "react": "craco start",
     "build:react": "craco build",
     "test:react": "craco test",
     "eject": "react-scripts eject"

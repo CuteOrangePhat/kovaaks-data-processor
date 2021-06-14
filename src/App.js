@@ -1,20 +1,18 @@
-import './App.css';
 import React from 'react';
-import {HashRouter,Route,Switch} from "react-router-dom";
+import {HashRouter, Route, Switch} from "react-router-dom";
 import Voltaic from './views/Voltaic/Voltaic';
 import Navigation from "./components/Navigation/Navigation";
-import "../node_modules/material-design-icons/iconfont/material-icons.css";
 
 const App = () => {
     return (
         <HashRouter>
-            <div className="App">
-                <Navigation />
+            <div className="flex h-full bg-purple-100">
+                <Navigation/>
                 <Switch>
                     <Route exact path="/" component={Voltaic}/>
-                </Switch>     
+                </Switch>
             </div>
-        </HashRouter> 
+        </HashRouter>
     );
 };
 
