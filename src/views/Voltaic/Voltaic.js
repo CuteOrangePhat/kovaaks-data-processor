@@ -1,4 +1,3 @@
-import './Voltaic.css';
 import {useStore} from "../../hooks/hooks";
 import {observer} from "mobx-react-lite";
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
@@ -9,7 +8,7 @@ const Voltaic = observer(() => {
     const voltaicScenarios = scenarioStore.getVoltaicScenarios()
 
     return (
-        <div className="voltaic">
+        <div className="flex flex-col">
             {
                 Object.keys(voltaicScenarios)
                     .filter((scenario) => voltaicScenarios[scenario])
