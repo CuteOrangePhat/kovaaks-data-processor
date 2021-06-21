@@ -6,19 +6,23 @@ const Voltaic = observer(() => {
     const scenarioStore = useStore("scenarioStore");
 
     const voltaicScenarios = scenarioStore.getVoltaicScenarios()
+    const voltaicReqs = scenarioStore.getVoltaricReqs()
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full items-center overflow-y-scroll">
             {
                 Object.keys(voltaicScenarios)
-                    .filter((scenario) => voltaicScenarios[scenario])
                     .map(
-                    (scenario) =>
-                        <ProgressBar key={scenario} scenario={scenario} scores={scenarioStore.scenarios[scenario]}/>
-                )
+                        (scenario) =>
+                            <div className="mt-2">
+                                <ProgressBar key={scenario} scenario={scenario} reqs={voltaicReqs}
+                                             scores={scenarioStore.scenarios[scenario]}/>
+                            </div>
+                    )
             }
         </div>
     );
-});
+}
+);
 
 export default Voltaic;
