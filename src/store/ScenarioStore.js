@@ -20,15 +20,12 @@ export class ScenarioStore {
         return voltInter.scenarioList
             .map(s => s.name)
             .map((name) => ({[name]: this.scenarios[name]}))
-            .reduce((acc, curr) => {
-                return {...acc, ...curr}
-            }, {});
+            .reduce((acc, curr) => ({...acc, ...curr}), {});
     }
 
     getVoltaricReqs() {
         return voltInter
     }
 }
-
 
 export default ScenarioStore;
