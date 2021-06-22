@@ -14,7 +14,6 @@ const statsPath = isDev ?
     './src/mockData/*.csv'
     : "C:/Program Files (x86)/Steam/steamapps/common/FPSAimTrainer/FPSAimTrainer/stats/";
 
-
 const chokidarOptions = {
     depth: 1
 }
