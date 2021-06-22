@@ -6,7 +6,7 @@ import Navigation from "./components/Navigation/Navigation";
 const App = () => {
     return (
         <HashRouter>
-            <div className="flex h-full bg-purple-500">
+            <div className="flex h-full bg-purple-500 overflow-y-auto">
                 <Navigation/>
                 <Switch>
                     <Route exact path="/" component={Voltaic}/>
