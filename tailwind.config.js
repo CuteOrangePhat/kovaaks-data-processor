@@ -9,15 +9,14 @@ module.exports = {
             boxShadow: {
                 navigation: '8px 4px 8px 0 rgba(0,0,0,0.2)'
             },
-            backgroundColor: theme => ({
-                ...theme('colors'),
+            colors: {
                 unranked: '#CD7F32',
                 silver: '#C0C0C0',
                 gold: '#FFD700',
                 platinum: '#008B8B',
                 diamond: '#B9F2FF',
                 max: '#B9F2FF'
-            })
+            }
         }
     },
     variants: {

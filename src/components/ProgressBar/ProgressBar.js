@@ -8,8 +8,8 @@ import Badge from "../Badge/Badge";
 const ProgressBar = observer((props) => {
     const [isOpen, toggleOpen] = useState(false);
 
+    const highScore = props.highScore;
     const reqs = props.reqs.scenarioList.find(s => s.name === props.scenario).reqs;
-    const highScore = props.scores?.map((score) => score.Score).reduce((acc, curr) => curr > acc ? curr : acc);
     const [nextRank, nextRankReq] = highScore > 0 ?
         Object.entries(reqs).find(req => req[1] > highScore) || ["max", highScore]
         : ["silver", reqs["silver"]];
@@ -17,8 +17,8 @@ const ProgressBar = observer((props) => {
     const percentToLevel = 100 * (highScore / nextRankReq) || 0
 
     return (
-        <div className="bg-gray-200 p-1 rounded-lg shadow-navigation">
-            <div className="flex cursor-pointer" onClick={() => toggleOpen(!isOpen)}>
+        <button className="bg-gray-200 p-1 rounded-lg shadow-navigation w-full">
+            <div className="flex" onClick={() => toggleOpen(!isOpen)}>
                 <Badge rank={currentRank} req={currentRankReq.toString()} rounding={'rounded-l-lg'}/>
                 <div className="w-full relative">
                     <div style={{width: percentToLevel + "%"}}
@@ -31,13 +31,14 @@ const ProgressBar = observer((props) => {
                 <Badge rank={nextRank} req={nextRankReq.toString()} rounding={'rounded-r-lg'}/>
             </div>
             {isOpen && <ProgressDrawer scores={props.scores}/>}
-        </div>
+        </button>
     )
 });
 
 ProgressBar.propTypes = {
     scenario: PropTypes.string,
-    scores: PropTypes.array
+    scores: PropTypes.array,
+    highScore: PropTypes.string
 };
 
 export default ProgressBar;

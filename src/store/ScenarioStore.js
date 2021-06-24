@@ -3,6 +3,7 @@ import voltInter from "../config/voltaic-intermediate.json"
 
 export class ScenarioStore {
     scenarios = {}
+    highScores = {}
 
     constructor() {
         makeAutoObservable(this)
@@ -10,10 +11,12 @@ export class ScenarioStore {
     }
 
     addScenario(file) {
-        if (!this.scenarios[file.data.Scenario]) {
-            this.scenarios[file.data.Scenario] = []
+        const scenarioName = file.data.Scenario;
+        if (!this.scenarios[scenarioName]) {
+            this.scenarios[scenarioName] = []
         }
-        this.scenarios[file.data.Scenario].push(file.data);
+        this.scenarios[scenarioName].push(file.data);
+        this.highScores[scenarioName] = this.scenarios[file.data.Scenario].map((score) => score.Score).reduce((acc, curr) => curr > acc ? curr : acc);
     }
 
     getVoltaicScenarios() {
@@ -25,6 +28,10 @@ export class ScenarioStore {
 
     getVoltaricReqs() {
         return voltInter
+    }
+
+    getHighScore(scenarioName) {
+        return this.highScores[scenarioName];
     }
 }
 
