@@ -11,12 +11,12 @@ export class ScenarioStore {
     }
 
     addScenario(file) {
-        const scenarioName = file.data.Scenario;
+        const scenarioName = file.data.name;
         if (!this.scenarios[scenarioName]) {
             this.scenarios[scenarioName] = []
         }
         this.scenarios[scenarioName].push(file.data);
-        this.highScores[scenarioName] = this.scenarios[file.data.Scenario].map((score) => score.Score).reduce((acc, curr) => curr > acc ? curr : acc);
+        this.highScores[scenarioName] = this.scenarios[file.data.name].map((score) => score.score).reduce((acc, curr) => curr > acc ? curr : acc);
     }
 
     getVoltaicScenarios() {
@@ -26,7 +26,7 @@ export class ScenarioStore {
             .reduce((acc, curr) => ({...acc, ...curr}), {});
     }
 
-    getVoltaricReqs() {
+    getVoltaicReqs() {
         return voltInter
     }
 
