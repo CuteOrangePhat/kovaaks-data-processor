@@ -17,7 +17,7 @@ jobs:
       - name: release
         uses: softprops/action-gh-release@v1
         with:
-          files: out/**/*.exe
+          files: out/make/squirrel.windows/x64/*.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
