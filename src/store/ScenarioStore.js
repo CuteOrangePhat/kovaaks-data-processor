@@ -7,16 +7,22 @@ export class ScenarioStore {
 
     constructor() {
         makeAutoObservable(this)
-        window.api.response("addScenario", (data) => this.addScenario(data));
+        window.api.response('initScenarioStore', () => this.resetScenarios());
+        window.api.response('addScenario', (data) => this.addScenario(data));
     }
 
     addScenario(file) {
-        const scenarioName = file.data.name;
+        const scenarioName = file.name;
         if (!this.scenarios[scenarioName]) {
             this.scenarios[scenarioName] = []
         }
-        this.scenarios[scenarioName].push(file.data);
-        this.highScores[scenarioName] = this.scenarios[file.data.name].map((score) => score.score).reduce((acc, curr) => curr > acc ? curr : acc);
+        this.scenarios[scenarioName].push(file);
+        this.highScores[scenarioName] = this.scenarios[file.name].map((score) => score.score).reduce((acc, curr) => curr > acc ? curr : acc);
+    }
+
+    resetScenarios() {
+        this.scenarios = {}
+        this.highScores = {}
     }
 
     getVoltaicScenarios() {

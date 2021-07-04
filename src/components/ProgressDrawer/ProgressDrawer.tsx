@@ -17,7 +17,7 @@ const ProgressDrawer = (props: ProgressDrawerProps) => {
         ?.map(s => s.score)
 
     const numAttemptsToday = todayAvgScores?.length;
-    const avgScoreToday = todayAvgScores?.reduce((acc, curr) => acc + +curr, 0) / numAttempts || "No Attempts Made";
+    const avgScoreToday = todayAvgScores?.reduce((acc, curr) => acc + +curr, 0) / numAttemptsToday || "No Attempts Made";
 
     return (
         <div className="grid grid-cols-2 bg-gray-200 divide-x-2 h-32 p-5 rounded-b-lg">

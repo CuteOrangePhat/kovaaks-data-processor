@@ -17,7 +17,8 @@ const badges: { [index: string]: any } = {
     silver,
     gold,
     platinum,
-    diamond
+    diamond,
+    max: diamond
 }
 
 const Badge = (props: BadgeProps) => (
