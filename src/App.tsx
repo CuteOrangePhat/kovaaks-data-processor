@@ -4,6 +4,7 @@ import {stores, StoresProvider} from "./store/RootStore";
 import Navigation from "./components/Navigation/Navigation";
 import { MemoryRouter, Route, Switch} from "react-router-dom";
 import Voltaic from "./views/Voltaic/Voltaic";
+import Settings from "./views/Settings/Settings";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.render(
                     <Navigation/>
                     <Switch>
                         <Route exact path="/" component={Voltaic}/>
+                        <Route exact path="/settings" component={Settings}/>
                     </Switch>
                 </div>
             </MemoryRouter>
