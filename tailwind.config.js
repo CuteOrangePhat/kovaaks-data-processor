@@ -18,7 +18,8 @@ module.exports = {
         gold: '#FFD700',
         platinum: '#008B8B',
         diamond: '#B9F2FF',
-        max: '#B9F2FF'
+        max: '#B9F2FF',
+        close: 'hsl(359,calc(1*82.6%),59.4%)'
       }
     }
   },
