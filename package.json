@@ -104,10 +104,10 @@
     "webpack": "^5.40.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "chokidar": "^3.5.2",
     "electron-squirrel-startup": "^1.0.0",
     "file-loader": "^6.2.0",
-    "material-design-icons": "^3.0.1",
     "mobx": "^6.3.2",
     "mobx-react": "^7.2.0",
     "react": "^17.0.2",

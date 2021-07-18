@@ -25,6 +25,8 @@ const createWindow = (): void => {
     const mainWindow = new BrowserWindow({
         height: 600,
         width: 800,
+        frame: false,
+        show: false,
         webPreferences: {
             preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
             nativeWindowOpen: true,
@@ -34,7 +36,18 @@ const createWindow = (): void => {
         }
     });
 
+    /* Workaround for bug that doesn't allow window to close
+     * https://github.com/electron/electron/issues/25012
+     */
+    mainWindow.once('ready-to-show', () => {
+        mainWindow.show()
+    })
+
     mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
+
+    ipcMain.on('closeWindow', () => mainWindow.close())
+    ipcMain.on('minimizeWindow', () => mainWindow.minimize())
+    ipcMain.on('maximizeWindow', () => mainWindow.maximize())
 
     ipcMain.on('updateStatsPath',async (a, statsPath) => {
         await watcher?.close();

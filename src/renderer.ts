@@ -1,4 +1,4 @@
 import './style.css';
-import "../node_modules/material-design-icons/iconfont/material-icons.css";
+import "../node_modules/@fortawesome/fontawesome-free/css/all.css"
 import './App';
 
